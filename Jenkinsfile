@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh 'docker stop spring-app || true'
                 sh 'docker rm spring-app || true'
-                sh 'docker run -d --name spring-app -p 8080:8080 spring-app:latest'
+                sh 'docker run -d --name spring-app -p 8081:8080 spring-app:latest'
             }
         }
     }
