@@ -13,5 +13,9 @@ public class HomeController {
     public String hello() {
         return "Hello World";
     }
+    @GetMapping("/moto")
+    public String moto() {
+        return "You are good enough";
+    }
 
 }
